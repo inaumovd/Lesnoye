@@ -1,0 +1,229 @@
+.intro {
+  padding-top: 194px;
+
+  background-image: url("../img/header-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #ffffff;
+}
+
+.intro__title-wrapper {
+  margin-bottom: 100px;
+  padding-left: 43%;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__text-title {
+  margin-left: 67px;
+  margin-bottom: 18px;
+
+  font-size:34px;
+  text-transform: uppercase;
+}
+
+.intro__image-title {
+  margin-bottom: 37px;
+  widht: 816px;
+  height: 331px;
+}
+
+.intro__slogan {
+  margin: 0;
+  margin-left: 207px;
+  padding: 0;
+
+  font-size: 51px;
+  line-height: 60px;
+}
+
+.intro__offer {
+  position: relative;
+  padding-left: 55%;
+  margin-bottom: 80px;
+  width: 300px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 355px;
+    top: 0;
+    width: 24px;
+    height: 237px;
+
+    background-image: url("../img/decor-vert.png");
+  }
+}
+
+.intro__offer-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 107px;
+  margin-bottom: 30px;
+
+  font-size: 18px;
+  color: @mainBeige;
+}
+
+.intro__offer-price {
+  font-size: 43px;
+}
+
+.intro__offer-period {
+  align-self: flex-end;
+}
+
+.intro__offer-description {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
+.intro__form-border-wrapper {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 3px solid @mainBeige;
+}
+
+.intro__form-wrapper {
+  position: relative;
+  padding-left: 29%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: @mainBeige;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    top: -42px;
+    margin-left: -259px;
+    width: 508px;
+    height: 44px;
+
+    background-image: url("../img/decor-hor-top.png");
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    bottom: -42px;
+    margin-left: -537px;
+    width: 782px;
+    height: 44px;
+
+    background-image: url("../img/decor-hor-bot.png");
+  }
+}
+
+.intro__booking-form {
+  display: flex;
+  justify-content: flex-start;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 50%;
+    bottom: -58%;
+    width: 975px;
+    height: 1206px;
+
+    background-image: url("../img/deer.png");
+  }
+}
+
+.intro__form-title {
+  margin-right: 30px;
+}
+
+.intro__input-date {
+  position: relative;
+  box-sizing: border-box;
+  width: 162px;
+  height: 48px;
+  margin-right: 30px;
+  padding: 14px 0 5px 54px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 12%;
+    bottom: 8px;
+    margin-left: 0px;
+    width: 23px;
+    height: 23px;
+
+    background-image: url("../img/small-calendar.png");
+  }
+
+  &::after {
+    position: absolute;
+    left: 34%;
+    bottom: 28px;
+    margin-left: 0px;
+
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 12px;
+  }
+}
+
+.intro__input-date--checkin {
+  &::after {
+    content: "Заезд";
+  }
+}
+
+.intro__input-date--checkout {
+  &::after {
+    content: "Выезд";
+  }
+}
+
+.intro__input-guests {
+  box-sizing: border-box;
+  width: 83px;
+  height: 48px;
+  margin-right: 30px;
+  padding-top: 14px;
+  padding-bottom: 5px;
+  padding-left: 51px;
+}
+
+.intro__input-guests-wrapper {
+  position: relative;
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 17%;
+    bottom: 11px;
+    width: 19px;
+    height: 19px;
+
+    background-image: url("../img/user-pic.png");
+  }
+
+  &::before {
+    content: "Гости";
+
+    position: absolute;
+    left: 36%;
+    bottom: 40px;
+    width: 20px;
+    height: 10px;
+
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 12px;
+  }
+}

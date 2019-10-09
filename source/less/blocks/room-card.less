@@ -1,0 +1,74 @@
+.room-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.room-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 358px;
+  margin-top: -68px;
+
+  background-color: #f3f3f3;
+}
+
+.room-card__top-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.room-card__bottom-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.room-card__price-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-left: 15px;
+  border-top: 1px solid fade(@textGray, 50%);
+  border-left: 3px solid @mainGreen;
+}
+
+.room-card__title {
+  margin-right: 10px;
+  margin-top: 22px;
+  font-size: 25px;
+}
+
+.room-card__description {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.room-card__price {
+  font-size: 25px;
+}
+
+.room-card__period {
+  margin-left: 36px;
+}
+
+.room-card__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15px;
+  flex-basis: 113px;
+
+  text-align: center;
+  background-color: @buttonYellow;
+  text-decoration: none;
+  color: @textGray;
+  vertical-align: middle;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: bold;
+}

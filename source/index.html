@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лесное</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <!-- <div style="display:none">
+    <include src="source/img/sprite.svg"></include>
+  </div> -->
+
+  <header class="page-header container">
+    <div class="page-header__wrapper">
+      <nav class="main-nav page-header__main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item"><a href="#" class="main-nav__list-link">Об отеле</a></li>
+          <li class="main-nav__list-item"><a href="#" class="main-nav__list-link">Номера и цены</a></li>
+          <li class="main-nav__list-item"><a href="#" class="main-nav__list-link">Мероприятия</a></li>
+          <li class="main-nav__list-item"><a href="#" class="main-nav__list-link">Контакты</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+74950056159" class="page-header__tel">+7(495)005-61-59</a>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-main__intro intro">
+      <div class="intro__title-wrapper container">
+        <h1 class="intro_main__main-title visually-hidden">Отель-заповедник Лесное</h1>
+        <span class="intro__text-title">Отель-заповедник</span>
+        <img src="../img/title.png" alt="Lesnoe title" class="intro__image-title" width="816" height="331">
+        <p class="intro__slogan">Премиальный отдых в подмосковье</p>
+      </div>
+      <div class="intro__offer container">
+        <div class="intro__offer-title-wrapper">
+          <span>от</span>
+          <span class="intro__offer-price">5500 р</span>
+          <span class="intro__offer-period">в сутки</span>
+        </div>
+        <p class="intro__offer-description"> 4х разовое питание и all inclusive. Собственное подсобное хозяйство, бассейн, баня, конный двор и контактный зоопарк</p>
+      </div>
+      <div class="intro__form-border-wrapper">
+        <div class="intro__form-wrapper">
+          <h3 class="intro__form-title">Бронирование номеров</h3>
+          <form class="intro__booking-form" action="" method="post">
+            <input class="intro__input-date intro__input-date--checkin" id="checkin" type="date" name="checkin" value="2019-03-04">
+            <input class="intro__input-date intro__input-date--checkout" id="checkout" type="date" name="checkout" value="2019-03-04">
+            <div class="intro__input-guests-wrapper">
+              <input class="intro__input-guests" id="guests" type="number" name="guests" value="1">
+            </div>
+            <input class="intro__booking-form-submit button button--form" type="submit" value="Найти номер">
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="page-main__rooms rooms">
+      <h2 class="rooms__title">Номерной фонд</h2>
+      <ul class="rooms__list">
+        <li class="rooms__list-item room-card">
+          <img class="room-card-image" src="https://place-hold.it/640x480" alt="Номер стандарт" width="640" height="480">
+          <div class="room-card__wrapper">
+            <div class="room-card__top-wrapper">
+              <span class="room-card__title">Стандарт</span>
+              <p class="room-card__description">Небольшой уютный номер 22м2 квадратных метра, есть варианты с одной двухспальной кроватью или с двумя односпальными кроватями.</p>
+            </div>
+            <div class="room-card__bottom-wrapper">
+              <div class="room-card__price-wrapper">
+                <span>от</span>
+                <span class="room-card__price">5500 р</span>
+                <span class="room-card__period">в сутки</span>
+              </div>
+              <a href="#" class="room-card__link">Посмотреть номер</a>
+            </div>
+          </div>
+        </li>
+        <li class="rooms__list-item room-card">
+          <img class="room-card-image" src="https://place-hold.it/640x480" alt="Номер стандарт плюс" width="640" height="480">
+          <div class="room-card__wrapper">
+            <div class="room-card__top-wrapper">
+              <span class="room-card__title">Стандарт плюс</span>
+              <p class="room-card__description">Просторный уютный номер 28м2, есть варианты с одной двухспальной кроватью или с двумя односпальными кроватями</p>
+            </div>
+            <div class="room-card__bottom-wrapper">
+              <div class="room-card__price-wrapper">
+                <span>от</span>
+                <span class="room-card__price">6000 р</span>
+                <span class="room-card__period">в сутки</span>
+              </div>
+              <a href="#" class="room-card__link">Посмотреть номер</a>
+            </div>
+          </div>
+        </li>
+        <li class="rooms__list-item room-card">
+          <img class="room-card-image" src="https://place-hold.it/640x480" alt="Номер люкс" width="640" height="480">
+          <div class="room-card__wrapper">
+            <div class="room-card__top-wrapper">
+              <span class="room-card__title">Люкс</span>
+              <p class="room-card__description">Просторные апартаменты повышенной комфортности площадью 50м2, есть варианты с душевой кабиной, либо с ванной.</p>
+            </div>
+            <div class="room-card__bottom-wrapper">
+              <div class="room-card__price-wrapper">
+                <span>от</span>
+                <span class="room-card__price">5500 р</span>
+                <span class="room-card__period">в сутки</span>
+              </div>
+              <a href="#" class="room-card__link">Посмотреть номер</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="rooms__vip-list">
+        <li class="rooms__vip-list-item">1</li>
+        <li class="rooms__vip-list-item">
+          <img class="rooms__vip-list-image" src="https://place-hold.it/640x480" alt="Люкс супериор">
+          <div class="rooms__vip-wrapper">
+            <h3 class="rooms__vip-title">Люкс супериор</h3>
+            <p class="rooms__vip-description">Раскошные двухкомнатные аппартаменты повышенной комфортности площадью 55м2 с ванной и электрокамином.</p>
+            <ul class="rooms__vip-futures-list">
+              <li class="rooms__vip-futures-list-item">Количество комнат в номере: 2.</li>
+              <li class="rooms__vip-futures-list-item">Количество основных мест в номере: 4.</li>
+              <li class="rooms__vip-futures-list-item">Количество дополнительных мест: 1.</li>
+              <li class="rooms__vip-futures-list-item">Площадь номера: 55м2.</li>
+              <li class="rooms__vip-futures-list-item">Всего номеров: 4.</li>
+            </ul>
+            <span class="rooms__vip-price">от <b>9550 &#x20bd;</b> в сутки</span>
+            <a href="#" class="rooms__vip-order-button button">Посмотреть номер</a>
+          </div>
+        </li>
+        <li class="rooms__vip-list-item">3</li>
+      </ul>
+    </section>
+    <section class="page-main__about about">
+      <h2 class="about__title visually-hidden">Информация об отеле</h2>
+      <img class="about__image" src="https://place-hold.it/920x712" alt="Отель" width="920" height="712">
+      <div class="about__text-wrapper">
+        <h3 class="about__title">Добро пожаловть <br> в отель-заповедник «Лесное»</h3>
+        <p class="about__text">Отель-заповедник «Лесное» – прекрасное место для настоящих ценителей кристально свежего воздуха и живописных красот настоящей Русской природы. В нашем отеле вас ждут светлые и уютные с замечательным видом на живой хвойный лес, высокий уровень обслуживания и развлечения на любой вкус. Общая территория отеля «Лесное» – 682 гектара, куда входят: луга, лесной массив и 11 природных озер, 89 просторных и светлых номеров категорий стандарт, люкс, коттедж и VIP вилла. Ресторан на 250 персон, в котором вы сможете по достоинству оценить русскую, итальянскую, кавказскую, французскую и европейскую кухни. Наши повара используют только самые свежие продукты, которые поставляются из собственного подсобного хозяйства.</p>
+        <a href="#" class="about__link button">Обзор территории</a>
+      </div>
+    </section>
+    <section class="page-main__video video">
+      <h2 class="video__title">Видео об отеле</h2>
+    </section>
+    <section class="page-main__calendar calendar">
+      <h2 class="calendar__title">Календарь событий</h2>
+      <ul class="calendar__event-list">
+        <li class="calendar__event-list-item event-item">
+          <img class="event-item__image" src="https://place-hold.it/250x150" alt="Event" width="250" height="150">
+          <div class="event__item-wrapper">
+            <span class="event-item__date">7-10</span>
+            <span class="event-item__month">марта</span>
+            <span class="event-item__name">«Международный женский день»</span>
+          </div>
+        </li>
+        <li class="calendar__event-list-item event-item">
+          <img class="event-item__image" src="https://place-hold.it/250x150" alt="Event" width="250" height="150">
+          <div class="event__item-wrapper">
+            <span class="event-item__date">22-31</span>
+            <span class="event-item__month">марта</span>
+            <span class="event-item__name">«Детские каникулы»</span>
+          </div>
+        </li>
+        <li class="calendar__event-list-item event-item">
+          <img class="event-item__image" src="https://place-hold.it/250x150" alt="Event" width="250" height="150">
+          <div class="event__item-wrapper">
+            <span class="event-item__date">15-21</span>
+            <span class="event-item__month">апреля</span>
+            <span class="event-item__name">«BBQ PARTY» - делаем самый большой стейк</span>
+          </div>
+        </li>
+        <li class="calendar__event-list-item event-item">
+          <img class="event-item__image" src="https://place-hold.it/250x150" alt="Event" width="250" height="150">
+          <div class="event__item-wrapper">
+            <span class="event-item__date">9</span>
+            <span class="event-item__month">мая</span>
+            <span class="event-item__name">«День победы»</span>
+          </div>
+        </li>
+        <li class="calendar__event-list-item event-item">
+          <img class="event-item__image" src="https://place-hold.it/250x150" alt="Event" width="250" height="150">
+          <div class="event__item-wrapper">
+            <span class="event-item__date">5-10</span>
+            <span class="event-item__month">июня</span>
+            <span class="event-item__name">День лета. Запускаем воздушных змеев</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="page-footer"></footer>
+
+<!-- <script src="js/script.js"></script> -->
+
+</body>
+</html>
