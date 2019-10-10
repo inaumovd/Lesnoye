@@ -4,7 +4,7 @@
 }
 
 .page-main__rooms {
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 
 .page-main__about {
@@ -16,5 +16,30 @@
 }
 
 .page-main__calendar {
-  margin-bottom: 200px;
+  margin-bottom: 150px;
+}
+
+@media (max-width: @md-width) {
+  .page-main__about {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: @sm-width) {
+  .page-main__intro {
+    margin-top: -336px;
+    margin-bottom: 30px;
+  }
+
+  .page-main__video {
+    display: none;
+  }
+
+  .page-main__about {
+    margin-bottom: 50px;
+  }
+
+  .page-main__calendar {
+    margin-bottom: 30px;
+  }
 }

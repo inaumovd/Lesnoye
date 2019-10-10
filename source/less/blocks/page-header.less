@@ -25,3 +25,31 @@
   border: 1px solid @mainBeige;
   border-radius: 15px;
 }
+
+@media (max-width: @md-width) {
+  .page-header__main-nav {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: @sm-width) {
+  .page-header {
+    padding: 0;
+  }
+  .page-header__wrapper {
+    display: block;
+  }
+
+  .page-header__main-nav {
+    margin: 0;
+  }
+
+  .page-header__tel {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .page-header {
+    margin-bottom: 50px;
+  }
+}

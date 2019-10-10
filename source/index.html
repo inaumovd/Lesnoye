@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Лесное</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
 </head>
 <body>
 
@@ -56,7 +59,7 @@
         </div>
       </div>
     </section>
-    <section class="page-main__rooms rooms">
+    <section class="page-main__rooms rooms container">
       <h2 class="rooms__title">Номерной фонд</h2>
       <ul class="rooms__list">
         <li class="rooms__list-item room-card">
@@ -112,24 +115,35 @@
         </li>
       </ul>
       <ul class="rooms__vip-list">
-        <li class="rooms__vip-list-item">1</li>
+        <!-- <li class="rooms__vip-list-item">
+          <img class="rooms__vip-list-image" src="https://place-hold.it/100x100" alt="Люкс супериор" width="100" height="100">
+        </li> -->
         <li class="rooms__vip-list-item">
-          <img class="rooms__vip-list-image" src="https://place-hold.it/640x480" alt="Люкс супериор">
-          <div class="rooms__vip-wrapper">
-            <h3 class="rooms__vip-title">Люкс супериор</h3>
-            <p class="rooms__vip-description">Раскошные двухкомнатные аппартаменты повышенной комфортности площадью 55м2 с ванной и электрокамином.</p>
-            <ul class="rooms__vip-futures-list">
-              <li class="rooms__vip-futures-list-item">Количество комнат в номере: 2.</li>
-              <li class="rooms__vip-futures-list-item">Количество основных мест в номере: 4.</li>
-              <li class="rooms__vip-futures-list-item">Количество дополнительных мест: 1.</li>
-              <li class="rooms__vip-futures-list-item">Площадь номера: 55м2.</li>
-              <li class="rooms__vip-futures-list-item">Всего номеров: 4.</li>
-            </ul>
-            <span class="rooms__vip-price">от <b>9550 &#x20bd;</b> в сутки</span>
-            <a href="#" class="rooms__vip-order-button button">Посмотреть номер</a>
+          <img class="rooms__vip-list-toggle" src="https://place-hold.it/100x100" alt="Люкс супериор">
+          <div class="rooms__vip-list-wrapper">
+            <picture>
+              <source media="(max-width: 1200px)" srcset="https://place-hold.it/500x200">
+              <img class="rooms__vip-list-image" src="https://place-hold.it/640x480" alt="Люкс супериор" width="640" height="480">
+            </picture>
+            <div class="rooms__vip-info-wrapper">
+              <h3 class="rooms__vip-title">Люкс супериор</h3>
+              <p class="rooms__vip-description">Раскошные двухкомнатные аппартаменты повышенной комфортности площадью 55м2 с ванной и электрокамином.</p>
+              <ul class="rooms__vip-futures-list">
+                <li class="rooms__vip-futures-list-item">Количество комнат в номере: 2.</li>
+                <li class="rooms__vip-futures-list-item">Количество основных мест в номере: 4.</li>
+                <li class="rooms__vip-futures-list-item">Количество дополнительных мест: 1.</li>
+                <li class="rooms__vip-futures-list-item">Площадь номера: 55м2.</li>
+                <li class="rooms__vip-futures-list-item">Всего номеров: 4.</li>
+              </ul>
+              <span class="rooms__vip-price">от <b>9550 &#x20bd;</b> в сутки</span>
+              <a href="#" class="rooms__vip-order-button button">Посмотреть номер</a>
+            </div>
           </div>
+          <img class="rooms__vip-list-toggle" src="https://place-hold.it/100x100" alt="Люкс супериор">
         </li>
-        <li class="rooms__vip-list-item">3</li>
+        <!-- <li class="rooms__vip-list-item">
+          <img class="rooms__vip-list-image" src="https://place-hold.it/100x100" alt="Люкс супериор" width="100" height="100">
+        </li> -->
       </ul>
     </section>
     <section class="page-main__about about">
@@ -143,8 +157,25 @@
     </section>
     <section class="page-main__video video">
       <h2 class="video__title">Видео об отеле</h2>
+      <video class="video__video" autoplay loop width="640" height="480">
+        <source src="URL">
+      </video>
+      <ul class="video__video-list">
+        <li class="video__video-list-item">
+          <img class="video__video-list-image" src="https://place-hold.it/100x80" alt="Отель" width="100" height="80">
+          <span class="video__video-description">Новый год 2019</span>
+        </li>
+        <li class="video__video-list-item">
+          <img class="video__video-list-image" src="https://place-hold.it/100x80" alt="Отель" width="100" height="80">
+          <span class="video__video-description">Лето в Лесном</span>
+        </li>
+        <li class="video__video-list-item">
+          <img class="video__video-list-image" src="https://place-hold.it/100x80" alt="Отель" width="100" height="80">
+          <span class="video__video-description">Осень пора свадеб</span>
+        </li>
+      </ul>
     </section>
-    <section class="page-main__calendar calendar">
+    <section class="page-main__calendar calendar container">
       <h2 class="calendar__title">Календарь событий</h2>
       <ul class="calendar__event-list">
         <li class="calendar__event-list-item event-item">
@@ -188,6 +219,59 @@
           </div>
         </li>
       </ul>
+    </section>
+    <section class="page-main__contacts contacts container">
+      <h2 class="contacts__title">Как добраться до отеля</h2>
+      <div class="contacts__wrapper">
+        <div class="contacts__contacts-wrapper">
+          <div class="contacts__transport contacts__transport--auto">
+            <h3 class="contacts__transport-title">На автомобиле:</h3>
+            <p class="contacts__transport-description">Двигайтесь  110км по Киевскому шоссе от МКАД в сторону Калуги, далее съезд направо перед участком платной дороги в сторону село Недельное 26 км.</p>
+          </div>
+          <div class="contacts__transport contacts__transport--public">
+            <h3 class="contacts__transport-title">Общественным транспортом:</h3>
+            <p class="contacts__transport-description">От киевского вокзала на комфортабельном эксперссе до станции Малоярославец, далее от жд станции на такси до отеля.</p>
+          </div>
+          <div class="contacts__contacts">
+            <h3 class="contacts__contacts-title">Контакты</h3>
+            <div class="contacts__contacts-links-wrapper">
+              <div class="contacts__contacts-links">
+                <a class="contacts__contacts-link" href="tel:+74950056159" class="contacts__tel">+7(495)005-61-59</a>
+                <a class="contacts__contacts-link" href="mailto:info@lesnoe.ru">info@lesnoe.ru</a>
+                <span class="contacts__contacts-link" class="contacts__addres">249073, Калужская область, село Недельное</span>
+              </div>
+              <div class="contacrs__social">
+                <h3 class="contacts__social-title">Социальные сети</h3>
+                <ul class="contacts__social-list">
+                  <li class="contacts__social-item">
+                    <span class="visually-hidden">VK</span>
+                    <img class="contacts__social-image" src="https://place-hold.it/20x20" alt="VK" width="20" height="20">
+                  </li>
+                  <li class="contacts__social-item">
+                    <span class="visually-hidden">Facebook</span>
+                    <img class="contacts__social-image" src="https://place-hold.it/20x20" alt="FB" width="20" height="20">
+                  </li>
+                  <li class="contacts__social-item">
+                    <span class="visually-hidden">Youtube</span>
+                    <img class="contacts__social-image" src="https://place-hold.it/20x20" alt="Youtube" width="20" height="20">
+                  </li>
+                  <li class="contacts__social-item">
+                    <span class="visually-hidden">Instagram</span>
+                    <img class="contacts__social-image" src="https://place-hold.it/20x20" alt="Instagram" width="20" height="20">
+                  </li>
+                  <li class="contacts__social-item">
+                    <span class="visually-hidden">Odnoklassniki</span>
+                    <img class="contacts__social-image" src="https://place-hold.it/20x20" alt="Odnoklassniki" width="20" height="20">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1684833.816416422!2d36.27265172833068!3d55.53017526861515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4134d77c9bc37d4b%3A0x4305897f2e6cd0da!2z0J3QtdC00LXQu9GM0L3QvtC1LCDQmtCw0LvRg9C20YHQutCw0Y8g0L7QsdC7LiwgMjQ5MDcz!5e0!3m2!1sru!2sru!4v1570679837253!5m2!1sru!2sru" width="860" height="592" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </div>
     </section>
   </main>
 

@@ -21,3 +21,36 @@
   color: @textGray;
   font-size: 24px;
 }
+
+@media (max-width: @xl-width) {
+  .main-nav__list-item {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: @md-width) {
+  .main-nav__list-item {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: @sm-width) {
+  .main-nav__list {
+    display: block;
+  }
+
+  .main-nav__list-item {
+    padding-top: 10px;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}

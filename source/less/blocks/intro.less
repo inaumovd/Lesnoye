@@ -95,6 +95,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 
   background-color: @mainBeige;
 
@@ -225,5 +226,86 @@
 
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 12px;
+  }
+}
+
+@media (max-width: @xl-width) {
+  .intro__form-wrapper {
+    padding-left: 13%;
+  }
+}
+
+@media (max-width: @md-width) {
+  .intro__form-wrapper {
+    padding-left: 10px;
+  }
+
+  .intro__form-title {
+    margin: 0 auto;
+  }
+
+  .intro__booking-form {
+    margin: 0 auto;
+  }
+
+  .intro__booking-form {
+    &::after {
+      content: none;
+    }
+  }
+
+  .intro__title-wrapper {
+    margin-bottom: 100px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro__booking-form {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .intro__input-date{
+    margin-bottom: 10px;
+  }
+
+  .intro__offer{
+    padding-left: 0;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .intro__input-guests-wrapper {
+    &::before {
+      bottom: 50px;
+    }
+    &::after {
+      bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: @sm-width) {
+  .intro {
+    padding-top: 294px;
+  }
+
+  .intro__title-wrapper {
+    display: none;
+  }
+
+  .intro__offer {
+    display: none;
+  }
+
+  .intro__form-wrapper {
+    &::after {
+      content: none;
+    }
+
+    &::before {
+      content: none;
+    }
   }
 }

@@ -1,7 +1,42 @@
 .video__title {
   margin: 0;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   padding: 0;
   font-size: 28px;
   text-align: center;
+}
+
+.video__video {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+  border: 1px solid @mainBeige;
+}
+
+.video__video-list {
+  .list-reset();
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.video__video-list-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.video__video-description {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+}
+
+.video__video-list-image {
+  width: 100px;
+  height: 80px;
 }
